@@ -94,6 +94,8 @@ _start:
 	cmp byte ptr[temp + 1], 0
 	je ex
 	div byte ptr[temp + 1]
+	cmp ah, 0
+	jne ex
 	numToAscii res
 	display msg5, len5
 	display res, 4
