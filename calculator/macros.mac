@@ -1,34 +1,21 @@
-# To Display data:
+# To Display Data:
 
 .macro display addr, len
-
-mov eax, 4
-mov ebx, 1
-lea ecx, \addr
-mov edx, \len
-int 0x80
-
+	mov eax, 4
+	mov ebx, 1
+	lea ecx, \addr
+	mov edx, \len
+	int 0x80
 .endm
 
-# To Read data from user:
+# To Read Data From User:
 
 .macro read addr, len
-
-mov eax, 3
-mov ebx, 2
-lea ecx, \addr
-mov edx, \len
-int 0x80
-
-.endm
-
-# Exit
-
-.macro exit
-
-mov eax, 1
-int 0x80
-
+	mov eax, 3
+	mov ebx, 2
+	lea ecx, \addr
+	mov edx, \len
+	int 0x80
 .endm
 
 # Ascii to Number:
@@ -53,4 +40,11 @@ int 0x80
 	add ah, 0x30
 	mov \addr, al
 	mov \addr + 1, ah
+.endm
+
+# Exit
+
+.macro exit
+	mov eax, 1
+	int 0x80
 .endm
