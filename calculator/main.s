@@ -36,8 +36,8 @@
 	new_line:
 		.ascii "\n"
 		
-		temp:
-			.ds 10
+	temp:
+		.ds 10
 	
 
 .text
@@ -89,8 +89,8 @@ _start:
 	display new_line, 1
 	
 	# Division
-     division:	
-     mov al, [temp]
+        division:	
+        mov al, [temp]
 	cmp byte ptr[temp + 1], 0
 	je ex
 	div byte ptr[temp + 1]
