@@ -28,7 +28,7 @@ new_line:
 	.ascii "\n"
 	
 str:
-	.ascii "SHIVAPRASAD" # change the string here
+	.ascii "RACECAR" # change the string here
 	.equ str_len, .-str
 
 rstr:
