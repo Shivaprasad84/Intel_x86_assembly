@@ -23,7 +23,7 @@ N:
 _start:
 	display msg1, len1
 	read N, 2
-	ascii_to_num N # converts number to ascii and stores it in al
+	ascii_to_num N # converts ascii to number and stores it in al
 	mov cl, al
 	lea esi, fibo
 	mov ebx, 0
