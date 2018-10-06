@@ -61,11 +61,12 @@ _start:
 	lea esi, str
 	lea edi, rstr
 	mov cx, str_len
-	sub cx, 1
 	next: cmpsb
-	jnz nxt
+	jne nxt
+	dec cx
+	jnz next
 	cmp cx, 0
-	jc next
+	je nxt
 	display msg3, len3
 	jmp ex
 	nxt:
