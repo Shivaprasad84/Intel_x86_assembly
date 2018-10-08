@@ -1,5 +1,4 @@
 # Reverse a string and check if it is a palindrome or not
-# Credits Srishanth S Amin #
 
 .intel_mnemonic
 .intel_syntax noprefix
