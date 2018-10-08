@@ -64,7 +64,7 @@ _start:
 	next: cmpsb
 	jne nxt
 	dec cx
-	jne next
+	jnz next
 	display msg3, len3
 	jmp ex
 	nxt:
