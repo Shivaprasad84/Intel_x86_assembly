@@ -5,11 +5,11 @@
 .data
 	angle: .float 30			# 0
 	pi_deg: .float 180			# 4
-	angle_in_radian: .float 0	# 8
+	angle_in_radian: .float 0		# 8
 	sin: .float 0				# 12
 	cos: .float 0				# 16
 	tan: .float 0				# 20
-	cosec: .float 0			# 24
+	cosec: .float 0				# 24
 	sec: .float 0				# 28
 	cot: .float 0				# 32
 
