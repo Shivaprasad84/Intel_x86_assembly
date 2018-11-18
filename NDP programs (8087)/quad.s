@@ -3,7 +3,7 @@
 .include "macros.mac"
 
 .data
-	# Change the coefficients here
+	# change the coefficients here (ax^2 + bx + c = 0)
 	a: .float 1 				# 0
 	b: .float 28 				# 4
 	c: .float 192				# 8
