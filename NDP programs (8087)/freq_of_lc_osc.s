@@ -3,7 +3,7 @@
 .include "macros.mac"
 
 .data
-	L: .float 0.002		# 2mH
+	L: .float 0.002			# 2mH
 	C: .float 0.0000001		# 0.1uF
 	freq: .float 0			# f = 1/2*pi*sqrt(L*C)
 
