@@ -9,11 +9,11 @@
 	c: .float 192				# 8
 	
 	two: .float 2 				# 12
-	two_a: .float -2 			# 16
-	L: .float -2 				# 20
+	two_a: .float 0 			# 16
+	L: .float 0 				# 20
 	
-	x1: .float -2 				# 24 (Root 1)
-	x2: .float -2 				# 28 (Root 2)
+	x1: .float 0 				# 24 (Root 1)
+	x2: .float 0 				# 28 (Root 2)
 
 .text
 .global _start
