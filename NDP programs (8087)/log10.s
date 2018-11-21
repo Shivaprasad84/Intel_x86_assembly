@@ -4,7 +4,7 @@
 .data
 	num: .float 28
 	base: .float 10
-	log: .float 0
+	log: .float 0		# Performs log operation of 'num' to the 'base' # in this case log10(28)
 
 .text
 .global _start
