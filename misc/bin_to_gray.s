@@ -9,13 +9,14 @@
 .text
 .global _start
 _start:
+	### BINARY TO GRAY CODE ###
 	mov al, num
-	
 	mov bl, al
 	shr al, 1
 	xor bl, al
 	mov gray, bl
-	nop
+	
+	### GRAY CODE TO BINARY ###
 	mov al, gray
 	mov bl, al
 	shr bl, 2
