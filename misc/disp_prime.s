@@ -1,3 +1,6 @@
+# Display upto first 24 prime numbers
+# Single digit value of n should be given with a prefix 0, i.e, 5 should be give as 05
+
 .intel_mnemonic
 .intel_syntax noprefix
 .include "macros.mac"
@@ -51,8 +54,9 @@
 .text
 .global _start
 _start:
+	#### Generate n prime numbers ####
 	display msg1, len1
-	read n, 2
+	read n, 2   			# n
 	ascii_to_num n
 	mov N, al
 	lea ebp, pa
@@ -69,7 +73,8 @@ _start:
 	inc cl
 	cmp di, 0
 	jne up1
-
+	
+	#### Display n prime numbers ####
 	lea ebp, pa
 	mov di, N
 	up2:
