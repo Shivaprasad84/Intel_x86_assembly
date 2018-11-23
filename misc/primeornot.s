@@ -13,8 +13,8 @@
 _start:
 	mov cl, 43
 	
-	cmp cl, 0
-	je notprime
+	cmp cl, 1
+	jle notprime
 	
 	cmp cl, 4
 	jl prime
