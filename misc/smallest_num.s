@@ -16,8 +16,8 @@
 .text
 .global _start
 _start:
-	#display msg1, len1
-	#read array, 5
+	display msg1, len1
+	read array, 5
 	mov dx, 4 
 	lea ebp, array
 	mov al, byte ptr[ebp]
